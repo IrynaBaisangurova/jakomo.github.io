@@ -1,1 +1,0 @@
-# jakomo.github.io
