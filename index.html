@@ -4,58 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="./style.css/style.css">
+    <title>telegram</title>
 </head>
 <body>
- <header class="container header">
-    <nav>
-        <ul class="header-ul">
-            <li class="header-li">
-            <a href="">
-                HOME
-            </a>
-            </li >
-            <li class="header-li">
-                <a href="">
-                    PHOTO
-                </a>
-            </li>
-            <li class="header-li">
-                <a href="">
-                    STOCK
-                </a>
-            </li>
-            <li class="header-li">
-                <a href="">
-                    SAVE
-                </a>
-            </li>
-        </ul>
-    </nav>
- </header>
- <section class="container bg-section">
-     <div>
-<h1 class="bg-text">
-    SAVE MOMENTS
-</h1>
-<button class="button">
-    BUY NOW
-</button>
-</div>
- </section>
- <section class="container section-text">
-    <div>
-        <p class="text">
-     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-    anim id est laborum.
-        </p>
-    </div>
- </section>
+    <form action="telegram.php" method="post">
+        <div>
+            <input placeholder="your name" type="text" id="name">
+            <p id="error-name" class="error-message">
+                Your name
+            </p>
+        </div>
+        <div>
+            <input placeholder="Your email" type="email" id="email">
+            <p id="error-email" class="error-message">
+                Your email
+            </p>
+        </div>
+        <button id="button" type="submit">
+             Send info
+        </button>
+    </form>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script src="./script.js/script.js"></script>
+
+
 </body>
 </html>
