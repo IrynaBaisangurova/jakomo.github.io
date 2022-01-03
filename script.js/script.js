@@ -9,7 +9,8 @@ $('#button').on('click', function(e){
      if(name == ""){
          $('#error-name').text('Enter your name')
      }else if(email == "") {
-         $('#error-email').text('Enter your email')
+         $('#error-email').text('Enter your email');
+         return false
      }
      $.ajax({
          url:'ajax/telegram.php',
@@ -17,9 +18,18 @@ $('#button').on('click', function(e){
          cache: false, 
          data:{'email': email, 'name': name},
          dataType: 'html',
+         beforeSend: function(){
+            $('#button').prop('disabled', true)
+        },
          success: function(){
            alert('its okey')
-         }
+           $('.modal-overlay').fadeIn();
+           $('#name').val('');
+      $('#email').val('');
+      $('#error-email').text('');
+      $('#error-name').text('');
+      $('#button').prop('disabled', false);
 
-     })
+        }
+    })
 })
